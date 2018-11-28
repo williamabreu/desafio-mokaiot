@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "name": "Ar condicionado 1",
+        "type": "air",
+        "status": true,
+        "origin": "Lavras",
+        "when": {
+            "milli": 1541875554000,
+            "date": "2018-11-10T18:45:54.000Z"
+        }
+    },
+    {
+        "id": 1,
+        "name": "Ar condicionado 2",
+        "type": "air",
+        "status": false,
+        "origin": "São Paulo",
+        "when": {
+            "milli": 1542722454000,
+            "date": "2018-11-20T14:00:54.000Z"
+        }
+    }
+]
