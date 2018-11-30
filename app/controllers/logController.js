@@ -9,10 +9,10 @@ exports.list = async function (req, res) {
     if (resp.error) {
         res.status(500).json(resp);
     } else {
-        let respData = {
-            log: resp,
-            status: 0
-        };
-        res.send(respData);
+        // let respData = {
+        //     log: resp,
+        //     status: 0
+        // };
+        res.send(JSON.parse(resp));
     }
 }
