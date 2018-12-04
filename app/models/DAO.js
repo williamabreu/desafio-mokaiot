@@ -4,10 +4,10 @@ class DAO {
         this.collection = collection;
     }
 
-    insertOne(log) {
-        console.log('Inserting');
+    insert(element) {
+        // console.log('Inserting');
         return new Promise((resolve, reject) => {
-            this.fs.appendFile(this.collection, JSON.stringify(log), (err) => {
+            this.fs.appendFile(this.collection, JSON.stringify(element), (err) => {
                 if (err) {
                     reject(err);
                 } else {
@@ -16,8 +16,9 @@ class DAO {
             });
         });
     }
+
     list() {
-        console.log('Reading');
+        // console.log('Reading');
         return new Promise((resolve, reject) => {
             this.fs.readFile(this.collection, 'utf8', (err, resp) => {
                 if (err) {
