@@ -1,10 +1,10 @@
 const DAO = require('./DAO');
 
-class LogDAO extends DAO {
+class ArDAO extends DAO {
     constructor() {
         super("ar.json");
         this.fs = require('fs');
     }
 }
 
-module.exports = LogDAO;
+module.exports = ArDAO;
