@@ -1,12 +1,6 @@
 const router = require('express').Router();
-const exCtrl = require('../controllers/exampleController');
-const logCtrl = require('../controllers/logController');
+const arCtrl = require('../controllers/arController');
 
-router.get('/', (req, res) => {
-    res.send({ message: 'Welcome to ... Example Micro Service' });
-});
-
-router.post('/api/example/action', exCtrl.action);
-router.get('/api/log/list', logCtrl.list);
+router.get('/api/list/ar', arCtrl.list);
 
 module.exports = router;
