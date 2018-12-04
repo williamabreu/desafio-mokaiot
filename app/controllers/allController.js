@@ -10,9 +10,6 @@ exports.list = async function (req, res) {
     } else if (luzResp.error) {
         res.status(500).json(luzResp);
     } else {
-        res.send({
-            ar: JSON.parse(arResp),
-            luz: JSON.parse(luzResp)
-        });
+        res.send( JSON.parse(arResp).concat(JSON.parse(luzResp)) );
     }
 }
